@@ -43,3 +43,9 @@ let people: {
   name: string;
   age: number;
 }[];
+
+// Type inference
+
+let course = "Example-blabla-bla"; // The initial value will determine the Type Automatically
+
+// course = 12345;

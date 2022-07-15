@@ -15,3 +15,14 @@ To compile file (convert into JS) for browser to undertand
 ## 2 Base Types
 
 - "basics.ts"
+  => Examples
+
+///////////////////////////////////////////////////////////////////////////////////////////////
+
+## 3 Type Inference
+
+- "basics.ts"
+  => Example
+
+**\*** TS automatically will try to determine the Base Type automatically **\***
+The initial value will determine the Type
