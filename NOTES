@@ -1,0 +1,11 @@
+## 1 Installing & Using Typescript
+
+----------------------------------------------- npm init -y
+Create "package.json"
+
+----------------------------------------------- npm i typesript
+needs node.js
+
+----------------------------------------------- npx tsc FILENAME
+To compile file (convert into JS) for browser to undertand
+[Browser can't read Typescript]
