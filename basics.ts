@@ -67,3 +67,20 @@ const add = (a: number, b: number): number | string => {
 const message = (value: any) => {
   console.log(value);
 };
+
+// __________________________________________________________________
+// Generics
+
+// When using the function will automatically detect type errors
+const insertAtBeginning = <T>(array: T[], value: T) => {
+  const newArray = [value, ...array];
+  return newArray;
+};
+
+const demoArray = [1, 2, 3];
+
+const numberdArray = insertAtBeginning(demoArray, 0);
+const stringArray = insertAtBeginning(["a", "b", "c"], "d");
+
+// automatically knows we mixing numbers & strings
+const errorArrayExample = insertAtBeginning([1, 2, 3], "a");

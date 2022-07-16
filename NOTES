@@ -59,3 +59,12 @@ So we can use "anyName" as reference
 **\*** You can also set return types in functions **\***
 
 **\*** void === function never returns (undefined) **\***
+
+///////////////////////////////////////////////////////////////////////////////////////////////
+
+## 7 Generics
+
+- "basics.ts"
+  => Using { <T> } to add Generic type to a function
+
+**\*** Function will automatically knows we mixing numbers & strings **\***
