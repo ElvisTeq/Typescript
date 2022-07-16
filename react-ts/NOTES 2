@@ -8,3 +8,27 @@
 **\*** No need to manually convert our TS to JS **\***
 => no need to { npx tsc FILENAME }
 => Also it automatically does when { npm run build }
+
+///////////////////////////////////////////////////////////////////////////////////////////
+
+## 2 Working with Components
+
+- Created
+  => "Todos.tsx" (Functional Component)
+
+- "App.tsx"
+  => Added Component to JSX
+
+///////////////////////////////////////////////////////////////////////////////////////////
+
+## 3 Working with Props & TypeScript
+
+- "Todos.tsx"
+  => Implementing { React.Fc } Type for React Components
+  => Using { <{}> } to create our own props type
+
+------------------------------------------------- const anyName: React.FC = (props) => {}
+TypeScript for React Functional Components
+
+------------------------------------------------- <{anyName: string[]}>
+To define/create our own Prop type
