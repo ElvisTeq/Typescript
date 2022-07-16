@@ -8,7 +8,7 @@ let age: number;
 
 age = 12;
 
-let userName: string;
+let userName: string | string[];
 
 userName = "Max";
 
@@ -46,6 +46,6 @@ let people: {
 
 // Type inference
 
-let course = "Example-blabla-bla"; // The initial value will determine the Type Automatically
+let course: string | number = "Example-blabla-bla"; // The initial value will determine the Type Automatically
 
-// course = 12345;
+course = 12345;

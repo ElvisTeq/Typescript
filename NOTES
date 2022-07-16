@@ -26,3 +26,14 @@ To compile file (convert into JS) for browser to undertand
 
 **\*** TS automatically will try to determine the Base Type automatically **\***
 The initial value will determine the Type
+
+///////////////////////////////////////////////////////////////////////////////////////////////
+
+## 4 Union Types (To allow more than 1 type)
+
+- "basics.ts"
+  => Using { | } to add multiple types
+
+----------------------------------------------- let anyName: string | number
+
+----------------------------------------------- let anyName: string | string[]
