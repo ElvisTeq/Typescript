@@ -37,3 +37,14 @@ The initial value will determine the Type
 ----------------------------------------------- let anyName: string | number
 
 ----------------------------------------------- let anyName: string | string[]
+
+///////////////////////////////////////////////////////////////////////////////////////////////
+
+## 5 Type Aliases
+
+- "basics.ts"
+  => implementing { type }
+
+---------------------------------------------- type anyName = { object }
+To create an alias
+So we can use "anyName" as reference
