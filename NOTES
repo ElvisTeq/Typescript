@@ -48,3 +48,14 @@ The initial value will determine the Type
 ---------------------------------------------- type anyName = { object }
 To create an alias
 So we can use "anyName" as reference
+
+///////////////////////////////////////////////////////////////////////////////////////////////
+
+## 6 Function types
+
+- "basics.ts"
+  => Function type examples
+
+**\*** You can also set return types in functions **\***
+
+**\*** void === function never returns (undefined) **\***

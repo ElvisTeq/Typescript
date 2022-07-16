@@ -54,3 +54,16 @@ let people: Person[]; // Person => Type alias
 let course: string | number = "Example-blabla-bla"; // The initial value will determine the Type Automatically
 
 course = 12345;
+
+// __________________________________________________________________
+// Function types
+
+// You can also set return types
+const add = (a: number, b: number): number | string => {
+  return a + b;
+};
+
+// void (undefined) ===  function never returns
+const message = (value: any) => {
+  console.log(value);
+};
