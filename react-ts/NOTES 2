@@ -1,0 +1,10 @@
+## 1 Starting our React-Typescript project
+
+---------------------------------- npx create-react-app ANY-NAME --template typescript
+
+- Projects added to
+  => "react-ts"
+
+**\*** No need to manually convert our TS to JS **\***
+=> no need to { npx tsc FILENAME }
+=> Also it automatically does when { npm run build }

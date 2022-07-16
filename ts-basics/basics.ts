@@ -83,4 +83,4 @@ const numberdArray = insertAtBeginning(demoArray, 0);
 const stringArray = insertAtBeginning(["a", "b", "c"], "d");
 
 // automatically knows we mixing numbers & strings
-const errorArrayExample = insertAtBeginning([1, 2, 3], "a");
+// const errorArrayExample = insertAtBeginning([1, 2, 3], "a");
