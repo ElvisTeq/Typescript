@@ -24,7 +24,7 @@
 ## 3 Working with Props & TypeScript
 
 - "Todos.tsx"
-  => Implementing { React.Fc } Type for React Components
+  => Implementing { React.FC } (Type for React Components)
   => Using { <{}> } to create our own props type
 
 ------------------------------------------------- const anyName: React.FC = (props) => {}
@@ -32,3 +32,18 @@ TypeScript for React Functional Components
 
 ------------------------------------------------- <{anyName: string[]}>
 To define/create our own Prop type
+
+///////////////////////////////////////////////////////////////////////////////////////////
+
+## 4 Adding a Data Model
+
+- Created
+  => "./models/todo.ts"
+  => Creating Class using TypeScript
+
+- "App.tsx"
+  => Created DUMMY_DATA with our TS class
+
+- "Todos.tsx"
+  => We can add Imported Class Component and use it for TS Type
+  => React.FC<{ items: Todo[] }>

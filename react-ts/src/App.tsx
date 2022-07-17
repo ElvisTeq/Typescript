@@ -1,10 +1,13 @@
-import Todos from "./components/Todos";
+import Todos from "./components/Todos"; // Todos for JSX
+import Todo from "./models/todo"; // Todos Data structure (Class Component)
 import "./App.css";
 
 function App() {
+  const todos = [new Todo("Learn React"), new Todo("Learn TypeScript")];
+
   return (
     <div>
-      <Todos items={["Learn React", "Learn TS"]} />
+      <Todos items={todos} />
     </div>
   );
 }
