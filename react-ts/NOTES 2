@@ -56,3 +56,15 @@ To define/create our own Prop type
   => "TodoItem.tsx"
   => Component for our <li> of Items
   => { React.FC<{}> } Implemented (To add JSX Type)
+
+///////////////////////////////////////////////////////////////////////////////////////////
+
+## 6 FormSubmission in TypeScript Projects (Events)
+
+- "NewTodo.tsx"
+  => Implementing { React.FormEvent } Type for React Events
+
+----------------------------------------------- React.FormEvent
+Type for React "Form" Events
+
+----------------------------------------------- React.MouseEvent
