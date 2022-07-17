@@ -47,3 +47,12 @@ To define/create our own Prop type
 - "Todos.tsx"
   => We can add Imported Class Component and use it for TS Type
   => React.FC<{ items: Todo[] }>
+
+///////////////////////////////////////////////////////////////////////////////////////////
+
+## 5 Practice
+
+- Created
+  => "TodoItem.tsx"
+  => Component for our <li> of Items
+  => { React.FC<{}> } Implemented (To add JSX Type)
