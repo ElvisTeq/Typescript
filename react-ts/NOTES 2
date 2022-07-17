@@ -68,3 +68,16 @@ To define/create our own Prop type
 Type for React "Form" Events
 
 ----------------------------------------------- React.MouseEvent
+
+///////////////////////////////////////////////////////////////////////////////////////////
+
+## 7 Working with Refs & useRef
+
+- "NewTodo.tsx"
+  => Using { useRef() }
+  => adding <HTMLInputElement> type to "useRef()"
+  => useRef<HTMLInputElement>(null) => (Requires Default Starting Value (null) because no value)
+
+// More HTML Types **\*** GOOGLE: "mdn input" **\***
+----------------------------------------------- <HTMLInputElement>
+----------------------------------------------- <HTMLButtonElement>
