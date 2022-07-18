@@ -93,4 +93,12 @@ Type for React "Form" Events
   => Created Function For "App.tsx" using { React.FC<{ FuncName: (DATA: string) => void }> }
 
 ----------------------------------------------- React.FC<{ FuncName: (DATA: string) => void }>
-Creating a FProp Function
+Creating a Prop Function
+
+///////////////////////////////////////////////////////////////////////////////////////////
+
+## 9 useState & TypeScript
+
+- "App.tsx"
+  => Implementing { useState } (Defining Type for "useState")
+  => useState<Todo[]> (To Define Type for the state)
