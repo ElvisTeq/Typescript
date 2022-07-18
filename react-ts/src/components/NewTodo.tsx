@@ -1,8 +1,8 @@
 import React from "react";
 import { useRef } from "react";
 
-// hrmlFor="text" => CONNECTS => id="text"
-const NewTodo = () => {
+// React.FC<{ onAddTodo: (text: string) => void }> => Creating a Prop Function
+const NewTodo: React.FC<{ onAddTodo: (text: string) => void }> = (props) => {
   // <HTMLInputElement> => Type for HTML Input Elements
   const todoTextInputRef = useRef<HTMLInputElement>(null); // Requires Default Starting Value (null) because no value
 
@@ -16,10 +16,14 @@ const NewTodo = () => {
     return;
   }
 
+  // We defined the function type as => <{ onAddTodo: (text: string) => void }>
+  props.onAddTodo(enteredText);
+
   const submitHandler = (event: React.FormEvent) => {
     event.preventDefault();
   };
 
+  // hrmlFor="text" => CONNECTS => id="text"
   return (
     <form onSubmit={submitHandler}>
       <label htmlFor="text">Todo text</label>

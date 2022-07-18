@@ -81,3 +81,16 @@ Type for React "Form" Events
 // More HTML Types **\*** GOOGLE: "mdn input" **\***
 ----------------------------------------------- <HTMLInputElement>
 ----------------------------------------------- <HTMLButtonElement>
+
+///////////////////////////////////////////////////////////////////////////////////////////
+
+## 8 Working with "Function Props"
+
+- "App.tsx"
+  => imported { NewTodo } Form Component
+
+- "NewTodo.tsx"
+  => Created Function For "App.tsx" using { React.FC<{ FuncName: (DATA: string) => void }> }
+
+----------------------------------------------- React.FC<{ FuncName: (DATA: string) => void }>
+Creating a FProp Function
