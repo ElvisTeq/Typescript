@@ -1,9 +1,11 @@
 import React from "react";
-import { useRef } from "react";
+import { useRef, useContext } from "react";
+import { TodosContext } from "../store/todos-context";
 import classes from "./NewTodo.module.css";
 
-// React.FC<{ onAddTodo: (text: string) => void }> => Creating a Prop Function
-const NewTodo: React.FC<{ onAddTodo: (text: string) => void }> = (props) => {
+const NewTodo: React.FC = () => {
+  const todosCtx = useContext(TodosContext);
+
   // <HTMLInputElement> => Type for HTML Input Elements
   const todoTextInputRef = useRef<HTMLInputElement>(null); // Requires Default Starting Value (null) because no value
 
@@ -20,8 +22,7 @@ const NewTodo: React.FC<{ onAddTodo: (text: string) => void }> = (props) => {
       return;
     }
 
-    // We defined the function type as => <{ onAddTodo: (text: string) => void }>
-    props.onAddTodo(enteredText);
+    todosCtx.addTodo(enteredText);
   };
 
   // hrmlFor="text" => CONNECTS => id="text"

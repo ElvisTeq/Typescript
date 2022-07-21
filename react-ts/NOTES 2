@@ -125,3 +125,31 @@ Creating a Prop Function
 
 - "App.tsx"
   => Creating { onRemoveTodoHandler }
+
+///////////////////////////////////////////////////////////////////////////////////////////
+
+## 12 Context API & TypeScript
+
+- "./store/todos-context.tsx"
+  => Creating Context { React.createContext({}) } with TypeScript
+  => Using Type Alias { type ANYNAME } To avoid duplicate code
+  => { React.FC } for JSX type
+
+- "App.tsx"
+  => Removed & Moved all State to the Context Provider
+  => Added the created Context
+
+- "Todos.tsx"
+  => Removed Props & Props type Definition <{}>
+  => Implemented { useContext } to get data instead of props
+
+- "NewTodo.tsx"
+  => Removed Props & Props type Definition <{}>
+  => Implemented { useContext } To get context function
+
+**\*** Error Fix **\***
+TypeScript now does not automatically detects {props.children}
+
+- "todos-context.tsx"
+  => Used { Type Alias } to Define { children } type
+  => Added { chindren } type to the component function with <{}>
