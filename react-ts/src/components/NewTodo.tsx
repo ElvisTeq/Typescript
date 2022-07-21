@@ -1,5 +1,6 @@
 import React from "react";
 import { useRef } from "react";
+import classes from "./NewTodo.module.css";
 
 // React.FC<{ onAddTodo: (text: string) => void }> => Creating a Prop Function
 const NewTodo: React.FC<{ onAddTodo: (text: string) => void }> = (props) => {
@@ -25,7 +26,7 @@ const NewTodo: React.FC<{ onAddTodo: (text: string) => void }> = (props) => {
 
   // hrmlFor="text" => CONNECTS => id="text"
   return (
-    <form onSubmit={submitHandler}>
+    <form onSubmit={submitHandler} className={classes.form}>
       <label htmlFor="text">Todo text</label>
       <input type="text" id="text" ref={todoTextInputRef} />
       <button>Add Todo</button>

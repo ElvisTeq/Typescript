@@ -102,3 +102,26 @@ Creating a Prop Function
 - "App.tsx"
   => Implementing { useState } (Defining Type for "useState")
   => useState<Todo[]> (To Define Type for the state)
+
+///////////////////////////////////////////////////////////////////////////////////////////
+
+## 10 Adding Styling
+
+- "Created"
+  => NewTodo.module.css
+  => TodoItem.module.css
+  => Todos.module.css
+
+///////////////////////////////////////////////////////////////////////////////////////////
+
+## 11 Removing a Todo
+
+- "TodoItem.tsx"
+  => Adding { onClick={} } event with TypeScript
+
+- "Todos.tsx"
+  => Passing { onRemoveTodoHandler } through Props to "TodoItems.tsx" from "App.tsx"
+  => Using { .bind(null, item.id) } To pass a function with predefined argument (item.id)
+
+- "App.tsx"
+  => Creating { onRemoveTodoHandler }
