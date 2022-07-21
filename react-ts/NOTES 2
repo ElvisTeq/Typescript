@@ -153,3 +153,13 @@ TypeScript now does not automatically detects {props.children}
 - "todos-context.tsx"
   => Used { Type Alias } to Define { children } type
   => Added { chindren } type to the component function with <{}>
+
+///////////////////////////////////////////////////////////////////////////////////////////
+
+## 13 More TypeScript Learning Resources
+
+- typescriptlandg.org
+  => TypeScript Full Documentation
+
+- create-react-app typescript
+  => Tutorial to set up TypeScript + React
